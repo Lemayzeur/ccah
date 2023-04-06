@@ -31,7 +31,7 @@ h1.entry-title span {
 	padding: 0 15px;
 }
 
-.entry {
+.entry:not(.entry.no-height) {
 	min-height: 100vh;
 	padding: 140px 0 70px 0;
 }
@@ -98,7 +98,7 @@ feature {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
+  bottom: -40px;
   z-index: 10;
 }
 
@@ -140,6 +140,15 @@ feature {
 /* rtl:begin:remove */
 .featurette-heading {
   letter-spacing: -.05rem;
+}
+
+.icons {
+	color: #aaa;
+	margin-top: 15px;
+}
+.icons i {
+	margin-right: 15px;
+	font-size: 20px;
 }
 
 /* rtl:end:remove */
