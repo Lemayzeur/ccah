@@ -13,7 +13,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
 
     
-
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
@@ -174,22 +174,43 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Accueuil</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Collaborateurs</a>
-          </li>
-					<li class="nav-item">
-            <a class="nav-link">Librairie</a>
-          </li>
+          <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Services
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Service 1</a></li>
+							<li><a class="dropdown-item" href="#">Service 2</a></li>
+							<li><a class="dropdown-item" href="#">Service 3</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Collaborateurs
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Service 1</a></li>
+							<li><a class="dropdown-item" href="#">Service 2</a></li>
+							<li><a class="dropdown-item" href="#">Service 3</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Librairie
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Service 1</a></li>
+							<li><a class="dropdown-item" href="#">Service 2</a></li>
+							<li><a class="dropdown-item" href="#">Service 3</a></li>
+						</ul>
+					</li>
 					<li class="nav-item">
             <a class="nav-link">Galerie</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control form-control-sm me-2" type="search" placeholder="Faire une recherche..." aria-label="Search">
-          <button class="btn btn-outline-warning btn-sm" type="submit">Recherche</button>
+          <button class="btn btn-outline-warning btn-sm" type="submit"><i class="fa fa-search"></i></button>
         </form>
       </div>
     </div>
@@ -211,7 +232,7 @@
 						<div class='inner'>
 							<h1>Notre mission</h1>
 							<p>Instaurer un climat de confiance, de transparence et de prévisibilité dans la résolution des conflits commerciaux.</p>
-							<p><a class="btn btn-lg btn-warning" href="#">En savoir plus</a></p>
+							<p><a class="btn btn-lg btn-warning" href="#">En savoir plus <i class="fa fa-chevron-right"></i></a></p>
 						</div>
           </div>
         </div>
@@ -240,19 +261,19 @@
 				<div class="col-lg-4">
 					<img src="./assets/mediation.png" height="170" />
 					<h2 class="">Médiation</h2>
-					<p>Processus amiable de résolution des litiges, la Médiation vise, grâce à l'intervention d'un Tiers impartial, à aider les parties à trouver elles-mêmes la solution...</p>
+					<p class="mb-2">Processus amiable de résolution des litiges, la Médiation vise, grâce à l'intervention d'un Tiers impartial, à aider les parties à trouver elles-mêmes la solution...</p>
 					<p><a class="btn btn-outline-secondary" href="#">Voir plus &raquo;</a></p>
 				</div><!-- /.col-lg-4 -->
 				<div class="col-lg-4">
 					<img src="./assets/arbitrage.png" height="170" />
 					<h2 class="">Arbitrage</h2>
-					<p>Mode juridictionnel, privé, de résolution des litiges, l'Arbitrage consiste à soumettre un conflit - né ou à naitre entre une ou plusieurs entreprises -, à la Juridiction d'un Tiers.</p>
+					<p class="mb-2">Mode juridictionnel, privé, de résolution des litiges, l'Arbitrage consiste à soumettre un conflit - né ou à naitre entre une ou plusieurs entreprises -, à la Juridiction d'un Tiers.</p>
 					<p><a class="btn btn-outline-secondary" href="#">Voir plus &raquo;</a></p>
 				</div><!-- /.col-lg-4 -->
 				<div class="col-lg-4">
 					<img src="./assets/decision.png" height="170" />
 					<h2 class=""> Décision d'urgence</h2>
-					<p>Procédure contractuelle destinée à donner une solution temporaire à un litige né au cours de l'exécution d'un contrat, la Décision d'Urgence assure la continuité de la relation contractuelle...</p>
+					<p class="mb-2">Procédure contractuelle destinée à donner une solution temporaire à un litige né au cours de l'exécution d'un contrat, la Décision d'Urgence assure la continuité de la relation contractuelle...</p>
 					<p><a class="btn btn-outline-secondary" href="#">Voir plus &raquo;</a></p>
 				</div><!-- /.col-lg-4 -->
 			</div><!-- /.row -->
@@ -332,7 +353,7 @@
 
 		</div><!-- /.container -->
 	</section>
-	<section class="entry">
+	<section class="entry bg-light">
 		<div class="marketing container">
 			<div id="carouselExample" class="carousel slide">
 				<div class="carousel-inner">
@@ -360,6 +381,111 @@
 			</div>
 		</div>
 		
+	</section>
+	
+	<section class="entry no-height py-5">
+		<div class="container marketing my-5">
+			<h1 class='entry-title'><span>Nos partenaires</span></h1>
+			<!-- Three columns of text below the carousel -->
+			<div class="d-flex justify-content-center">
+				<div class="">
+					<a href="#">
+						<img src="https://www.kadencewp.com/wp-content/uploads/2020/10/alogo-1.png" height="170" />
+					</a>
+				</div>
+				<div class="">
+					<a href="#">
+						<img src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png" height="170" />
+					</a>
+				</div>
+				<div class="">
+					<a href="#">
+						<img src="http://realestatebossmamas.com/wp-content/uploads/2018/02/logo-placeholder-1.png" height="170" />
+					</a>
+				</div>
+				<div class="">
+					<a href="#">
+						<img src="https://www.diabetes.ie/wp-content/uploads/2021/05/logo-Placeholder.jpg" height="170" />
+					</a>
+				</div>
+				<div class="">
+					<a href="#">
+						<img src="https://placeholderlogo.com/img/placeholder-logo-1.png" height="170" />
+					</a>
+				</div>
+			</div><!-- /.row -->
+		</div>
+	</section>
+	
+	
+	<section class="entry bg-light">
+		<div class="container marketing">
+			<h1 class='entry-title'><span>Foire Aux Questions</span></h1>
+			<!-- Three columns of text below the carousel -->
+			<div class="row">
+				<div class="col-6 mb-5">
+					<h5>Question 1</h5>
+					<p>Lorem Ipsum is simply dummy text f the printing and  ind dum. Lorem Ipsum is simply dummy text f the printing and  ind dum</p>
+				</div>
+				<div class="col-6 mb-5">
+					<h5>Question 1</h5>
+					<p>Lorem Ipsum is simply dummy text f the printing and  ind dum. Lorem Ipsum is simply dummy text f the printing and  ind dum</p>
+				</div>
+				<div class="col-6 mb-5">
+					<h5>Question 1</h5>
+					<p>Lorem Ipsum is simply dummy text f the printing and  ind dum. Lorem Ipsum is simply dummy text f the printing and  ind dum</p>
+				</div>
+				<div class="col-6 mb-5">
+					<h5>Question 1</h5>
+					<p>Lorem Ipsum is simply dummy text f the printing and  ind dum. Lorem Ipsum is simply dummy text f the printing and  ind dum</p>
+				</div>
+				<div class="col-6 mb-5">
+					<h5>Question 1</h5>
+					<p>Lorem Ipsum is simply dummy text f the printing and  ind dum. Lorem Ipsum is simply dummy text f the printing and  ind dum</p>
+				</div>
+				<div class="col-6 mb-5">
+					<h5>Question 1</h5>
+					<p>Lorem Ipsum is simply dummy text f the printing and  ind dum. Lorem Ipsum is simply dummy text f the printing and  ind dum</p>
+				</div>
+			</div><!-- /.row -->
+		</div>
+	</section>
+	
+	
+	<section class="entry">
+		<div class="container marketing">
+			<div class="row">
+				<div class="col-lg-5 col-md-4 col-12 mb-5">
+					<h1 class=''><span>Contactez-nous</span></h1>
+					<p>Adresse de la CCAH
+					<br>Ville, Department. Pays</p>
+					<div class='icons'>
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-linkedin"></i>
+					</div>
+				</div>
+				<div class="col-lg-7 col-md-8 col-12 mb-5">
+					<div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label"><i class="fa fa-user"></i> Votre nom</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlInput2" class="form-label"><i class="fa fa-inbox"></i> Votre adresse électronique</label>
+						<input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Adresse électronique">
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlTextarea1" class="form-label"><i class="fa fa-envelope"></i> Votre Message</label>
+						<textarea class="form-control" placeholder="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+					
+					<div class="mb-3">
+						<button class="btn btn-warning w-100"><i class="fa fa-paper-plane"></i> Envoyer</button>
+					</div>
+				</div>
+			</div><!-- /.row -->
+		</div>
 	</section>
 
   <!-- FOOTER -->
