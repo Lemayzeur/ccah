@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.111.3">
-    <title>Carousel Template · Bootstrap v5.3</title>
+    <title>CCAH</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
 
@@ -124,41 +124,6 @@
       </symbol>
     </svg>
 
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-              id="bd-theme"
-              type="button"
-              aria-expanded="false"
-              data-bs-toggle="dropdown"
-              aria-label="Toggle theme (auto)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-      </ul>
-    </div>
-
     
 <header data-bs-theme="dark">
   <nav class="navbar navbar-expand-md navbar-custom fixed-top">
@@ -176,15 +141,28 @@
           </li>
           <li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							A propos de nous
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Histoire, Mission, Valeurs</a></li>
+							<li><a class="dropdown-item" href="#">Structure</a></li>
+							<li><a class="dropdown-item" href="#">Collaborateurs</a></li>
+							<li><a class="dropdown-item" href="#">Activités</a></li>
+							<li><a class="dropdown-item" href="#">Calendrier des évènements à venir</a></li>
+						</ul>
+					</li>
+          <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Services
 						</a>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Service 1</a></li>
-							<li><a class="dropdown-item" href="#">Service 2</a></li>
-							<li><a class="dropdown-item" href="#">Service 3</a></li>
+							<li><a class="dropdown-item" href="#">Médiation</a></li>
+							<li><a class="dropdown-item" href="#">Arbitrage</a></li>
+							<li><a class="dropdown-item" href="#">Décision d’urgence</a></li>
+							<li><a class="dropdown-item" href="#">Barèmes</a></li>
 						</ul>
 					</li>
-					<li class="nav-item dropdown">
+					<!-- <li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Collaborateurs
 						</a>
@@ -193,24 +171,31 @@
 							<li><a class="dropdown-item" href="#">Service 2</a></li>
 							<li><a class="dropdown-item" href="#">Service 3</a></li>
 						</ul>
-					</li>
+					</li> -->
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Librairie
+							Librairie / Ressources
 						</a>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Service 1</a></li>
-							<li><a class="dropdown-item" href="#">Service 2</a></li>
-							<li><a class="dropdown-item" href="#">Service 3</a></li>
+							<li><a class="dropdown-item" href="#">Textes Légaux</a></li>
+							<li><a class="dropdown-item" href="#">Textes règlementaires</a></li>
+							<li><a class="dropdown-item" href="#">Codes</a></li>
+							<li><a class="dropdown-item" href="#">Clauses</a></li>
 						</ul>
 					</li>
 					<li class="nav-item">
+            <a class="nav-link">Blog</a>
+          </li>
+					<li class="nav-item">
             <a class="nav-link">Galerie</a>
+          </li>
+					<li class="nav-item">
+            <a class="nav-link">Contactez-nous</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control form-control-sm me-2" type="search" placeholder="Faire une recherche..." aria-label="Search">
-          <button class="btn btn-outline-warning btn-sm" type="submit"><i class="fa fa-search"></i></button>
+          <input class="custom-input form-control form-control-sm me-2" type="search" placeholder="Faire une recherche..." aria-label="Search">
+          <button class="btn btn-outline-warning btn-sm" type="submit"><i class="fa fa-search fa-fw"></i></button>
         </form>
       </div>
     </div>
@@ -219,33 +204,20 @@
 
 <main>
 
-  <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+  <div id="home-carousel">
+		<div class="parallax-bg"></div>
+
+    <div class="content">
+			<div class="bulb bulb1"></div>
+			<div class="bulb bulb2"></div>
+			<div class="bulb bulb3"></div>
+    	<div class='inner'>
+				<h1>Votre Conflit, Notre Expertise, <span style="text-decoration: underline;color: #563129">Une Solution</span></h1>
+				<h1></h1>
+				<p class="mission">Notre mission est de garantir une résolution constructive et efficace de vos conflits commerciaux.</p>
+				<p><a class="btn btn-lg btn-warning" href="#">En savoir plus <i class="fa fa-chevron-right"></i></a></p>
+			</div>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="container">
-          <div class="carousel-caption text-start">
-						<div class='inner'>
-							<h1>Notre mission</h1>
-							<p>Instaurer un climat de confiance, de transparence et de prévisibilité dans la résolution des conflits commerciaux.</p>
-							<p><a class="btn btn-lg btn-warning" href="#">En savoir plus <i class="fa fa-chevron-right"></i></a></p>
-						</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
 
 
@@ -261,19 +233,19 @@
 				<div class="col-lg-4">
 					<img src="./assets/mediation.png" height="170" />
 					<h2 class="">Médiation</h2>
-					<p class="mb-2">Processus amiable de résolution des litiges, la Médiation vise, grâce à l'intervention d'un Tiers impartial, à aider les parties à trouver elles-mêmes la solution...</p>
+					<p class="mb-2">La médiation est un processus volontaire et confidentiel, par lequel les parties, pour mettre fin à un conflit qui les oppose, recourent à un tiers indépendant et impartial, le médiateur...</p>
 					<p><a class="btn btn-outline-secondary" href="#">Voir plus &raquo;</a></p>
 				</div><!-- /.col-lg-4 -->
 				<div class="col-lg-4">
 					<img src="./assets/arbitrage.png" height="170" />
 					<h2 class="">Arbitrage</h2>
-					<p class="mb-2">Mode juridictionnel, privé, de résolution des litiges, l'Arbitrage consiste à soumettre un conflit - né ou à naitre entre une ou plusieurs entreprises -, à la Juridiction d'un Tiers.</p>
+					<p class="mb-2">L’arbitrage est une procédure qui consiste à soumettre par voie contractuelle, un litige né ou à naitre entre deux ou plusieurs parties à la juridiction d’un tiers, indépendant et...</p>
 					<p><a class="btn btn-outline-secondary" href="#">Voir plus &raquo;</a></p>
 				</div><!-- /.col-lg-4 -->
 				<div class="col-lg-4">
 					<img src="./assets/decision.png" height="170" />
 					<h2 class=""> Décision d'urgence</h2>
-					<p class="mb-2">Procédure contractuelle destinée à donner une solution temporaire à un litige né au cours de l'exécution d'un contrat, la Décision d'Urgence assure la continuité de la relation contractuelle...</p>
+					<p class="mb-2">Procédure contractuelle destinée à donner une solution temporaire à un litige né au cours de l’exécution d’un contrat. Cette solution s’impose aux parties jusqu’à l’éventuelle décision définitive...</p>
 					<p><a class="btn btn-outline-secondary" href="#">Voir plus &raquo;</a></p>
 				</div><!-- /.col-lg-4 -->
 			</div><!-- /.row -->
@@ -282,6 +254,7 @@
 	<section class="entry bg-light">
 		<div class="container marketing">
 			<h1 class='entry-title'><span>Comment saisir la CCAH ?</span></h1>
+			<h4 class="text-center">En matière de Médiation, En matière d’Arbitrage</h4>
 
 			<!-- START THE FEATURETTES -->
 
@@ -290,7 +263,15 @@
 			<div class="row featurette">
 				<div class="offset-md-1 col-md-6">
 					<h2 class="featurette-heading fw-normal lh-1">En matière de médiation</h2>
-					<p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+					<p class="lead">
+						Les parties, ou celle la plus diligente d’entre elles, saisissent (saisit) la Chambre par courrier recommandé adressé au Président du Conseil d’Administration de la CCAH. Cette lettre doit faire une présentation précise des parties et un résumé succinct des faits litigieux. Elle sera accompagnée :<br><br> 
+						<ul>
+					    <li>d’une copie du contrat stipulant le recours à la médiation (le cas échéant) ;</li>
+					    <li>des pièces du dossier (correspondance, factures, e-mails, reçus de paiement ou de livraison, etc) ;</li>
+					    <li>du paiement intégral des frais d’ouverture du dossier tels que fixés selon le barème en vigueur. Quelle que soit l’issue de la démarche des parties, cette somme restera acquise à la Chambre.</li> 
+					  </ul> 
+					  <a href="#">Lire la suite</a>
+					</p>
 				</div>
 				<div class="col-md-4 text-end">
 					<img src="https://www.snpc-nems.be/img/asset/YXNzZXRzL2ltYWdlcy9jaGFtYnJlLWNvbmNpbGlhdGlvbi1hcmJpdHJhZ2UtbWVkaWF0aW9uLWlzdG9jay0xMTQ0Mzc3NjcxLmpwZw==?p=seo_pro_og&s=a00511b29cfdcd5fbdab870c6b7d2588" height="200" class="img-fluid"/>
@@ -302,7 +283,18 @@
 			<div class="row featurette">
 				<div class="col-md-6 order-md-2">
 					<h2 class="featurette-heading fw-normal lh-1">En matière d'arbitrage</h2>
-					<p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+					<p class="lead">
+						D’une manière générale, la Chambre de Conciliation et d’Arbitrage d’Haïti (CCAH) est saisie au moyen d’une requête introductive d’instance sur la base d’une clause compromissoire ou d’un compromis d’arbitrage. La requête introductive d’instance arbitrale est l’acte par lequel la partie demanderesse informe le Président de la CCAH de son litige l’opposant à la partie défenderesse en lui exposant les faits du litige, ses prétentions et demandes.
+						
+						<br><br> Quel que soit le mode de saisine, le courrier adressé, par les parties - ou la plus diligente d’entre elles -, au président du Conseil d’Administration de la CCAH doit obligatoirement contenir :<br><br> 
+						<ul>
+							<li>L’état-civil ou la raison sociale du demandeur ;</li>
+							<li>Le nom et adresse de son avocat, le cas échéant ; </li>
+							<li>L’objet sommaire du litige ; </li>
+							<li>Les prétentions et demandes présentées ; </li>
+						</ul>
+						<a href="#">Lire la suite</a>
+					</p>
 				</div>
 				<div class="offset-md-1 col-md-4 order-md-1">
 					<img src="https://static.toiimg.com/thumb/msid-70732027,width-400,resizemode-4/70732027.jpg" class="img-fluid" height="200"/>
@@ -314,13 +306,13 @@
 		<div class="container marketing">
 			<h1 class='entry-title'><span>Nos actualités</span></h1>
 
-			 <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+			 <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
 				<div class="feature col">
 					<div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-						<img src="https://www.industriousoffice.com/wp-content/uploads/2021/04/Hero-WillisTower.jpg" class="img-fluid"/>
+						<img src="assets/img1.jpg" class="img-fluid"/>
 					</div>
-					<h3 class="">Titre d'une publication</h3>
-					<p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+					<h3 class="">La CCAH représentée au Congrès annuel de l’Union Internationale des Avocats (UIA)</h3>
+					<p>Une délégation d’arbitres composée de Maître Nathalie Wakam Cyprien, Maître Marie-Alice Bélisaire et Maître Gemma Anglade, a représenté la Chambre de Conciliation et d’Arbitrage d’Haïti au 67ème congrès de l’Union Internationale des Avocats (UIA) qui s’est tenu à Rome en Italie du 25 au 29 octobre 2023.</p>
 					<a href="#" class="icon-link">
 						Voir plus
 						<svg class="bi"><use xlink:href="#chevron-right"/></svg>
@@ -328,11 +320,11 @@
 				</div>
 				<div class="feature col">
 					<div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-						<img src="https://media.istockphoto.com/id/649495828/photo/conference-table-closeup.jpg?s=612x612&w=0&k=20&c=ZVEyQb78a-cVmaTrPHosRRHZEuVfXBdpkQnKcgxJ6vk=" class="img-fluid"/>
+						<img src="assets/img2.jpg" class="img-fluid"/>
 						<svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
 					</div>
-					<h3 class="">Titre d'un article</h3>
-					<p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+					<h3 class="">Participation de la CCAH au Caribbean Invest Forum 2023</h3>
+					<p>Organisée par le Caribbean Export Devlopment Agency (CEDA), cette deuxième édition du Caribbean Invest Forum s’est déroulée du 23 au 25 octobre 2023 autour du thème « A Bold New Caribbean » à Nassau, Bahamas.</p>
 					<a href="#" class="icon-link">
 						Voir plus
 						<svg class="bi"><use xlink:href="#chevron-right"/></svg>
@@ -340,10 +332,21 @@
 				</div>
 				<div class="feature col">
 					<div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-						<img src="https://media.wired.com/photos/5932b4a12a990b06268ac47d/master/w_2560%2Cc_limit/epicenter_tedindustrialcomplex.jpg" class="img-fluid"/>
+						<img src="assets/img3.jpg" class="img-fluid"/>
 					</div>
-					<h3 class="">Encore un titre</h3>
-					<p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+					<h3 class="">Rencontre avec les nouveaux inscrits</h3>
+					<p>Le 30 juin 2023, la Chambre de Conciliation et d’Arbitrage d’Haïti a reçu, à l’occasion d’un lunch à Aioli Restaurant, ses nouveaux adhérents en qualité d’arbitre et/ou médiateur.</p>
+					<a href="#" class="icon-link">
+						Voir plus
+						<svg class="bi"><use xlink:href="#chevron-right"/></svg>
+					</a>
+				</div>
+				<div class="feature col">
+					<div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+						<img src="assets/img4.jpg" class="img-fluid"/>
+					</div>
+					<h3 class="">Participation de la CCAH à la 45ème réunion de travail du Groupe III de la CNUDCI</h3>
+					<p>La Commission des Nations Unies pour le Droit Commercial International (CNUDCI) a tenu sa 45ème réunion de travail à New York du 26 au 30 mars 2023.</p>
 					<a href="#" class="icon-link">
 						Voir plus
 						<svg class="bi"><use xlink:href="#chevron-right"/></svg>
@@ -360,7 +363,7 @@
 					<div class="carousel-item active">
 						<div class="row justify-content-between featurette">
 							<div class="col-md-6">
-								<h1 class="">Titre  d'une activitité</h1>
+								<h1 class="">Colloque sur le Rôle de l’Avocat dans l’Arbitrage</h1>
 								<p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
 							</div>
 							<div class="col-md-6">
@@ -416,6 +419,23 @@
 			</div><!-- /.row -->
 		</div>
 	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 	<section class="entry bg-light">
@@ -424,29 +444,139 @@
 			<!-- Three columns of text below the carousel -->
 			<div class="row">
 				<div class="col-6 mb-5">
-					<h5>Question 1</h5>
-					<p>Lorem Ipsum is simply dummy text f the printing and  ind dum. Lorem Ipsum is simply dummy text f the printing and  ind dum</p>
+					<div class="accordion" id="accordionExample">
+						<div class="accordion-item">
+							<h5 class="accordion-header" id="question-3">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-3" aria-expanded="false" aria-controls="answer-3">
+									3- Quelle est la compétence de la CCAH en tant qu'institution arbitrale ?
+								</button>
+							</h5>
+							<div id="answer-3" class="accordion-collapse collapse" aria-labelledby="question-3" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>La CCAH propose des méthodes alternatives de résolution de conflits à l'amiable tels que la Médiation et l'Arbitrage pour le règlement des litiges commerciaux qui peuvent survenir dans le milieu des affaires en Haiti. Elle dispose à cet effet d'un certain nombre d'arbitres et de médiateurs chevronnés issus de milieux professionnels divers pouvant fournir leur expertise à tout type d'entreprise qui désire recourir aux services de la CCAH.</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="col-6 mb-5">
-					<h5>Question 1</h5>
-					<p>Lorem Ipsum is simply dummy text f the printing and  ind dum. Lorem Ipsum is simply dummy text f the printing and  ind dum</p>
+					<div class="accordion" id="accordionExample4">
+						<div class="accordion-item">
+							<h5 class="accordion-header" id="question-4">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-4" aria-expanded="false" aria-controls="answer-4">
+									4. Est-ce que la CCAH a autorité pour trancher tout litige?
+								</button>
+							</h5>
+							<div id="answer-4" class="accordion-collapse collapse" aria-labelledby="question-4" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>La CCAH a autorité pour aider les parties à trouver par voie amiable une solution uniquement aux litiges à caractère commercial.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
 				</div>
 				<div class="col-6 mb-5">
-					<h5>Question 1</h5>
-					<p>Lorem Ipsum is simply dummy text f the printing and  ind dum. Lorem Ipsum is simply dummy text f the printing and  ind dum</p>
+					<div class="accordion" id="accordionExample5">
+						<div class="accordion-item">
+							<h5 class="accordion-header" id="question-5">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-5" aria-expanded="false" aria-controls="answer-5">
+									5. Est-ce que la CCAH dépend du ministère des Affaires sociales ou du ministère de la Justice?
+								</button>
+							</h5>
+							<div id="answer-5" class="accordion-collapse collapse" aria-labelledby="question-5" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>La CCAH exerce sa mission dans une totale indépendance et en toute impartialité. Elle ne dépend d'aucun organisme public ou privé. Le but poursuivi par la CCAH est de favoriser le règlement des litiges par des méthodes plus rapides et moins onéreuses que les voies judiciaires étatiques.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
 				</div>
 				<div class="col-6 mb-5">
-					<h5>Question 1</h5>
-					<p>Lorem Ipsum is simply dummy text f the printing and  ind dum. Lorem Ipsum is simply dummy text f the printing and  ind dum</p>
+					<div class="accordion" id="accordionExample7">
+						<div class="accordion-item">
+							<h5 class="accordion-header" id="question-7">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-7" aria-expanded="false" aria-controls="answer-7">
+									7. La CCAH peut-elle faire exécuter de force la sentence arbitrale?
+								</button>
+							</h5>
+							<div id="answer-7" class="accordion-collapse collapse" aria-labelledby="question-7" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>Dès qu'elle est rendue, la sentence arbitrale a autorité de la chose jugée relativement à la contestation qu'elle tranche. Toutefois, elle ne sera susceptible d'exécution forcée qu'en vertu de l'ordonnance d'exequatur rendue sur la minute de la décision par le Doyen du Tribunal de Première Instance compétent. Cette ordonnance peut être sollicitée soit par l'arbitre unique, soit par le président du tribunal arbitral, soit enfin par la partie la plus diligente. L'ordonnance d'exequatur est insusceptible de recours.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
 				</div>
 				<div class="col-6 mb-5">
-					<h5>Question 1</h5>
-					<p>Lorem Ipsum is simply dummy text f the printing and  ind dum. Lorem Ipsum is simply dummy text f the printing and  ind dum</p>
+					<div class="accordion" id="accordionExample8">
+						<div class="accordion-item">
+							<h5 class="accordion-header" id="question-8">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-8" aria-expanded="false" aria-controls="answer-8">
+									8. Quelle est la durée d'une Médiation ? Quelle est la durée d'un arbitrage?
+								</button>
+							</h5>
+							<div id="answer-8" class="accordion-collapse collapse" aria-labelledby="question-8" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>Le délai maximum d'une Médiation est de trois mois et celui d'un arbitrage est de six mois. Les parties peuvent toutefois, d'un commun accord, décider de proroger le délai imparti au médiateur ou au tribunal arbitral. Le Président de la CCAH est également autorisé à accorder une exception.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
 				</div>
 				<div class="col-6 mb-5">
-					<h5>Question 1</h5>
-					<p>Lorem Ipsum is simply dummy text f the printing and  ind dum. Lorem Ipsum is simply dummy text f the printing and  ind dum</p>
+					<div class="accordion" id="accordionExample9">
+						<div class="accordion-item">
+							<h5 class="accordion-header" id="question-9">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-9" aria-expanded="false" aria-controls="answer-9">
+									9. Quel est le coût d'une Médiation ou d'un Arbitrage?
+								</button>
+							</h5>
+							<div id="answer-9" class="accordion-collapse collapse" aria-labelledby="question-9" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>Les frais de procédures de la CCAH, les honoraires des arbitres ou des médiateurs sont en proportion du montant en question dans les litiges. Il est recommandé de consulter le tableau des barèmes de la CCAH à cette fin.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
 				</div>
+				<div class="col-6 mb-5">
+					<div class="accordion" id="accordionExample11">
+						<div class="accordion-item">
+							<h5 class="accordion-header" id="question-11">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-11" aria-expanded="false" aria-controls="answer-11">
+									11. Les parties sont-elles obligées de se rendre à Port-au-Prince dans le cas d'une séance de Médiation ou d'Arbitrage?
+								</button>
+							</h5>
+							<div id="answer-11" class="accordion-collapse collapse" aria-labelledby="question-11" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>Le lieu où se tient une séance de médiation ou d'arbitrage dépend du choix des parties. Elles ne sont pas obligées de se rendre à Port-au-Prince pour la tenue de la séance. Cependant, tous les documents doivent mentionner le domicile de la CCAH comme siège social.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 mb-5">
+					<div class="accordion" id="accordionExample20">
+						<div class="accordion-item">
+							<h5 class="accordion-header" id="question-20">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-20" aria-expanded="false" aria-controls="answer-20">
+									20. Les tribunaux ordinaires sont-ils compétents dans le cas d'un contrat comportant une clause compromissoire?
+								</button>
+							</h5>
+							<div id="answer-20" class="accordion-collapse collapse" aria-labelledby="question-20" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>Non. Le Juge étatique est tenu, selon les dispositions de l'article 959-7 du Code de Procédure Civile de se déclarer incompétent pour connaître d'un litige portant sur un contrat stipulant le recours à l'arbitrage. À moins que la clause compromissoire ne soit manifestement nulle, le Juge doit renvoyer les parties, et charge à celles-ci d'organiser le tribunal arbitral ou d'introduire le cas par devant une institution arbitrale.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>				
 			</div><!-- /.row -->
 		</div>
 	</section>
@@ -465,6 +595,7 @@
 						<i class="fab fa-facebook-f"></i>
 						<i class="fab fa-twitter"></i>
 						<i class="fab fa-linkedin"></i>
+						<i class="fab fa-whatsapp"></i>
 					</div>
 				</div>
 				<div class="col-lg-7 col-md-8 col-12 mb-5">
@@ -492,13 +623,19 @@
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">En haut</a></p>
-    <p>&copy; 2023 CCAH. &middot; <a href="#">Terms</a> &middot; <a href="#">Conditions</a></p>
+    <p>&copy; 2023 CCAH. &middot; <a href="#">Informations légales</a> &middot; <a href="#">Politiques de confidentialité</a></p>
   </footer>
 </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 
-      
+    <script>
+				window.addEventListener('scroll', function() {
+					var scrolled = window.pageYOffset;
+					var parallaxBg = document.querySelector('.parallax-bg');
+					parallaxBg.style.transform = 'translateY(' + (scrolled * 0.4) + 'px)';
+				});
+		</script>
   </body>
 </html>
